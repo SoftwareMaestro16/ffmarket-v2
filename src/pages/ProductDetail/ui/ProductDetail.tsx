@@ -1,5 +1,4 @@
 import { useParams, Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import { Mail, MessageCircle, ArrowLeft, Shield, Zap, CheckCircle } from 'lucide-react';
 import { products } from '../../../entities/product/model/products';
 import { useAppStore } from '../../../shared/store/useAppStore';
@@ -10,7 +9,6 @@ import { ProductDetailBackground } from '../../../components/ProductDetailBackgr
 
 export const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
-  const { t } = useTranslation();
   const { currency, language } = useAppStore();
   const { data: exchangeData } = useExchangeRates();
 
