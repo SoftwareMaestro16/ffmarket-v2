@@ -1,0 +1,95 @@
+import type { Product } from '../../../shared/types';
+
+export const products: Product[] = [
+  // Diamonds
+  {
+    id: 'diamonds-100',
+    category: 'diamonds',
+    name: '100 Diamonds',
+    description: 'Valuable in-game currency for buying items.',
+    priceUSD: 1.00,
+    image: '💎',
+  },
+  {
+    id: 'diamonds-310',
+    category: 'diamonds',
+    name: '310 Diamonds',
+    description: 'Valuable in-game currency for buying items.',
+    priceUSD: 3.00,
+    image: '💎',
+  },
+  {
+    id: 'diamonds-520',
+    category: 'diamonds',
+    name: '520 Diamonds',
+    description: 'Valuable in-game currency for buying items.',
+    priceUSD: 5.00,
+    image: '💎',
+  },
+  {
+    id: 'diamonds-1060',
+    category: 'diamonds',
+    name: '1060 Diamonds',
+    description: 'Valuable in-game currency for buying items.',
+    priceUSD: 10.00,
+    image: '💎',
+  },
+  {
+    id: 'diamonds-2180',
+    category: 'diamonds',
+    name: '2180 Diamonds',
+    description: 'Valuable in-game currency for buying items.',
+    priceUSD: 20.00,
+    image: '💎',
+  },
+  {
+    id: 'diamonds-5600',
+    category: 'diamonds',
+    name: '5600 Diamonds',
+    description: 'Valuable in-game currency for buying items.',
+    priceUSD: 50.00,
+    image: '💎',
+  },
+  // Booyah Pass
+  {
+    id: 'booyah-monthly',
+    category: 'booyahPass',
+    name: 'Monthly Booyah Pass',
+    description: 'Access exclusive weapons for 1 month with the Booyah Pass.',
+    priceUSD: 4.99,
+    image: '🎫',
+  },
+  {
+    id: 'booyah-premium',
+    category: 'booyahPass',
+    name: 'Premium Booyah Pass',
+    description: 'Premium tier with enhanced rewards and instant level boosts.',
+    priceUSD: 9.99,
+    image: '🎫',
+  },
+  // Evo Subscription
+  {
+    id: 'evo-3days',
+    category: 'evoSubscription',
+    name: 'Evo Subscription - 3 Days',
+    description: 'Access exclusive weapons for 3 days with the Evo Subscription.',
+    priceUSD: 10.00,
+    image: '⭐',
+  },
+  {
+    id: 'evo-7days',
+    category: 'evoSubscription',
+    name: 'Evo Subscription - 7 Days',
+    description: 'Access exclusive weapons for 7 days with the Evo Subscription.',
+    priceUSD: 20.00,
+    image: '⭐',
+  },
+  {
+    id: 'evo-1month',
+    category: 'evoSubscription',
+    name: 'Evo Subscription - 1 Month',
+    description: 'Access exclusive weapons for 1 month with the Evo Subscription.',
+    priceUSD: 50.00,
+    image: '⭐',
+  },
+];
