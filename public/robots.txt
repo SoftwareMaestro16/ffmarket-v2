@@ -1,0 +1,9 @@
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ffmarketstore.netlify.app/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
