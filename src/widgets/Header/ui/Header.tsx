@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Globe, DollarSign, ShoppingCart, Menu, X } from 'lucide-react';
 import { useState } from 'react';
@@ -35,7 +35,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="bg-black/95 backdrop-blur-md text-white shadow-lg sticky top-0 z-50 border-b border-gray-800">
+    <header className="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-lg text-white shadow-2xl z-50 border-b border-gray-800/50">
       <div className="container mx-auto px-4 py-4 relative">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 text-xl md:text-2xl font-black">
@@ -110,7 +110,7 @@ export const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             />
             
-            <div className="absolute left-0 right-0 top-full lg:hidden bg-black/98 backdrop-blur-xl border-t border-gray-800 shadow-2xl z-40 animate-fade-in max-h-[calc(100vh-80px)] overflow-y-auto">
+            <div className="absolute left-0 right-0 top-full lg:hidden bg-black backdrop-blur-2xl border-t border-gray-800 shadow-2xl z-40 animate-fade-in max-h-[calc(100vh-80px)] overflow-y-auto">
               <div className="container mx-auto px-4 py-6">
                 <nav className="flex flex-col space-y-4 mb-6">
                   <Link to="/" onClick={() => setMobileMenuOpen(false)} className="hover:text-red-400 transition font-medium py-2">
@@ -132,11 +132,11 @@ export const Header = () => {
                         <button
                           key={lang.code}
                           onClick={() => handleLanguageChange(lang.code as Language)}
-                          className={+"px-4 py-3 rounded-lg text-sm transition $"+{
+                          className={`px-4 py-3 rounded-lg text-sm transition ${
                             language === lang.code 
                               ? 'bg-red-600 text-white font-semibold' 
                               : 'bg-gray-800 hover:bg-gray-700 text-gray-300'
-                          }}
+                          }`}
                         >
                           {lang.name}
                         </button>
@@ -151,11 +151,11 @@ export const Header = () => {
                         <button
                           key={curr}
                           onClick={() => handleCurrencyChange(curr)}
-                          className={+"px-4 py-3 rounded-lg text-sm transition font-medium $"+{
+                          className={`px-4 py-3 rounded-lg text-sm transition font-medium ${
                             currency === curr 
                               ? 'bg-orange-600 text-white font-bold' 
                               : 'bg-gray-800 hover:bg-gray-700 text-gray-300'
-                          }}
+                          }`}
                         >
                           {curr}
                         </button>

@@ -83,7 +83,7 @@ export const Hero = () => {
             <div className="group relative bg-gradient-to-br from-white/5 to-white/0 backdrop-blur-xl border border-white/10 rounded-xl md:rounded-2xl p-4 md:p-6 hover:border-yellow-500/50 transition-all duration-300 hover:scale-105">
               <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/0 to-yellow-600/10 rounded-xl md:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <div className="relative flex flex-col items-center">
-                <Zap size={50} className="text-yellow-400 mb-1 md:mb-2" />
+                <Zap className="text-yellow-400 mb-1 md:mb-2 w-[37px] h-[37px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px]" />
                 <div className="text-xs md:text-sm text-gray-400 font-semibold text-center">Instant</div>
               </div>
             </div>
