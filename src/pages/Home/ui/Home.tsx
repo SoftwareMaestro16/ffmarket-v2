@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Hero } from '../../../components/Hero';
 import { ProductCard } from '../../../features/product';
 import { ProductsSectionBackground } from '../../../components/ProductsSectionBackground';
+import { HowItWorksSection } from '../../../components/HowItWorksSection';
 import { products } from '../../../entities/product/model/products';
 
 export const Home = () => {
@@ -66,6 +67,8 @@ export const Home = () => {
           </div>
         </div>
       </section>
+
+      <HowItWorksSection />
     </div>
   );
 };
